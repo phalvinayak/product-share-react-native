@@ -1,15 +1,11 @@
 import React from 'react';
-import {SafeAreaView, View} from 'react-native';
-import Chair from './src/Chair';
-import Table from './src/Table';
+import {SafeAreaView} from 'react-native';
+import Signup from './src/screens/auth/Signup';
 
 function App(): JSX.Element {
   return (
     <SafeAreaView>
-      <View>
-        <Chair />
-        <Table />
-      </View>
+      <Signup />
     </SafeAreaView>
   );
 }
