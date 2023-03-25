@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {Text, View} from 'react-native';
+import {ScrollView, Text, View} from 'react-native';
 import {styles} from './styles';
 import AuthHeader from '../../../components/AuthHeader';
 import Input from '../../../components/Input';
@@ -17,7 +17,7 @@ const Signup: React.FC = () => {
     console.log('Sign Up Button pressed');
   };
   return (
-    <View style={styles.container}>
+    <ScrollView style={styles.container}>
       <AuthHeader title="Sign Up" onPress={handleHeacerBack} />
       <Input label="Name" placeholder="John Doe" />
       <Input label="Email" placeholder="example@gmail.com" />
@@ -39,7 +39,7 @@ const Signup: React.FC = () => {
       <Seperator text="Or sign up with" />
 
       <GoogleLogin />
-    </View>
+    </ScrollView>
   );
 };
 
